@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/panton">
+    <title>Dental</title>
+</head>
+<body>
+{% block header %}
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src={% static "img/logo.svg" %} alt="logo">
+            </div>
+            <div class="block_logo">
+                <img src={% static "img/google.svg" %} alt="google" class="photo">
+                <img src={% static "img/instagram.svg" %} alt="inst" class="photo">
+                <img src={% static "img/invision.svg" %} alt="invis" class="photo">
+            </div>
+            <ul class="menu">
+                <li>
+                    <a href="#">О нас</a>
+                </li>
+                <li>
+                    <a href="#">Услуги</a>
+                </li>
+                <li>
+                    <a href="#">Специалисты</a>
+                </li>
+                <li>
+                    <a href="#">Пациентам</a>
+                </li>
+                <li>
+                    <a href="#">Контакты</a>
+                </li>
+            </ul>
+            <div class="">
+                <div class="address">
+                    <img src={% static "img/address.svg" %} alt="address_logo">
+                    <div class="text">Чебоксары,<br> Энтузиастов 1А </div>
+                    <div class="calendar">
+                        <img src={% static "img/calendar.svg" %} alt="calendar">
+                        <div class="time">с 09:00 - 20:00</div>
+                    </div>
+
+                    <div class="phone">
+                        <img src={% static "img/phone.svg" %} alt="phone" class="phone">
+                        <div class="number">+89874920177</div>
+                    </div>
+                    <div class="btn">
+                        <button class="btn"><a href="'http://127.0.0.1:8000/phone/">Заказать звонок </a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+{% endblock header %}
+
+{% block content %}
+    <section class="main">
+        <div class="container">
+            <div class="main__wrap">
+                <div class="main__texts">
+                    <p class="main__address">— Стоматология в Чебоксарах</p>
+                    <h1 class="main__title">Лечение зубов <br> в тот же день</h1>
+                    <p class="main__text">Мы проведем полную консультацию, <br> профессиональную гигиену полости рта, <br>
+                        лечение зубов и десен</p>
+                        <button class="main__btn">Записаться на приём</button>
+                </div>
+                <div class="main__blocks">
+                    <div class="first__block">
+                        <img src={% static "img/Tilda_Icons_20med_doctor.svg" %} alt="docktor" class="first__img">
+                        <p>Команда квалифицированных <br> специалистов </p>
+                    </div>
+                    <div class="second__block">
+                        <img src={% static "img/stul.svg" %} alt="stul" class="second__img">
+                        <p>3 стоматологических <br> кабинета </p>
+                    </div>
+                    <div class="third__block">
+                        <img src={% static "img/gps.svg" %} alt="gps" class="third__img">
+                        <p>Удобное <br> расположение </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards">
+        <div class="container">
+            <div class="cards__wrap">
+                <div class="cards__texts">
+                    <h1 class="cards__title">Услуги</h1>
+                    <p class="cards__text">Мы постарались сделать прайс, <br>
+                        максимально простым и понятным. </p>
+                </div>
+                <div class="cards__blocks">
+                    <div class="dental__block">
+                        <img src={% static "img/hygiene.svg" %} alt="dental" class="card__dental-img">
+                        <p class="card__dental-text">Лечение зубов</p>
+                    </div>
+                        <img src={% static "img/strelka.svg" %} alt="strelka" class="strelka__dental">
+                     <div class="hygiene__block">
+                        <img src={% static "img/hygiene.svg" %} alt="hygiene" class="cards__block-img">
+                        <p class="cards__block-text">Гигиена</p>
+                    </div>
+                    <div class="brekets__block">
+                        <img src={% static "img/brekets.svg" %} alt="brekets" class="cards__block-img">
+                        <p class="cards__block-text">Брекеты</p>
+                    </div>
+                    <div class="kids__block">
+                        <img src={% static "img/kids.svg" %} alt="kids" class="cards__block-img">
+                        <p class="cards__block-text">Детская Стоматология</p>
+                    </div>
+                    <div class="implants__block">
+                        <img src={% static "img/implants.svg" %} alt="implants" class="cards__block-img">
+                        <p class="cards__block-text">Импланты</p>
+                    </div>
+                    <div class="vinirs__block">
+                        <img src={% static "img/vinirs.svg" %} alt="vinirs" class="cards__block-img">
+                        <p class="cards__block-text">Виниры</p>
+                    </div>
+                    <div class="koronki__block">
+                        <img src={% static "img/koronki.svg" %} alt="koronki" class="cards__block-img">
+                        <p class="cards__block-text">Коронки</p>
+                    </div>
+                    <div class="xirurgia__block">
+                        <img src={% static "img/xirurgia.svg" %} alt="xirurgia" class="cards__block-img">
+                        <p class="cards__block-text">Хирургия</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ques">
+        <div class="container">
+            <div class="ques__wrap">
+                <div class="ques__title">
+                    <h1 class="ques__title">Нам доверяют пациенты</h1>
+                </div>
+                <div class="ques__cards">
+                    <div class="first__card">
+                        <p class="card__num">1</p>
+                        <h1 class="card__title">Честные цены, без хитрых уловок</h1>
+                        <p class="card__text">Фиксируем цены в плане лечения, <br> не повышаем в процессе.</p>
+                    </div>
+                    <div class="second__card">
+                        <p class="card__num">2</p>
+                        <h1 class="card__title">Опытные Врачи</h1>
+                        <p class="card__text">Врачи постоянно совершенствуются <br>в своей специальности, несмотря <br>на богатый опыт работы.</p>
+                    </div>
+                    <div class="third__card">
+                        <p class="card__num">3</p>
+                        <h1 class="card__title">Комфортные условия</h1>
+                        <p class="card__text">Уютная обстановка и отзывчивый <br> персонал сделают поход к стоматологу <br> максимально приятным.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="record">
+        <div class="container">
+            <div class="record__wrap">
+                <div class="record__texts">
+                    <h1 class="record__title">При фиксации брекетов на обе челюсти <br> получи сертификат на 7000 рублей</h1>
+                    <p class="record__text">Укажите вой номер телефона, мы перезвоним <br> и подберем для вас удобное время приёма. <br>
+                        Или позвоните нам сами — +7 900 333 10 40 </p>
+                        <div class="record__btns">
+                            <input class="record__phone" type="tel" placeholder="Телефон">
+                            <button class="record__btn">Записаться на прием</button>
+                        </div>
+                    <p class="cookies">Записываясь на услугу вы даёте согласие на <br> <a href="#">обработку своих персональных данных</a></p>
+                </div>
+                <img src={% static "img/record.png" %} alt="women" class="record__img">
+            </div>
+        </div>
+    </section>
+</body>
+</html>
